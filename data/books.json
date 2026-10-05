@@ -4,13 +4,10 @@
       "id": "cultural-studies",
       "title": "Cultural Studies",
       "author": "FLSH Mohammedia S5",
-      "description": "19th Century Lit & Applied Linguistics materials",
+      "description": "Core Cultural Studies module materials — Barker, Hall, and theoretical frameworks",
       "cover": "https://placehold.co/300x400/1a1a2e/ffffff?text=Cultural+Studies",
       "pdf": "pdfs/cultural-studies-sample.pdf",
-      "categories": [
-        "Cultural Studies",
-        "19th Century Lit"
-      ],
+      "categories": ["Cultural Studies", "19th Century Lit"],
       "pages": 0,
       "uploaded": "2026-10-05"
     },
@@ -19,11 +16,7 @@
       "title": "The SAGE Dictionary of Cultural Studies",
       "author": "Chris Barker",
       "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "categories": [
-        "Cultural Studies",
-        "Dictionary",
-        "Reference"
-      ]
+      "categories": ["Cultural Studies", "Dictionary", "Reference"]
     },
     {
       "id": "stuart-hall-cultural-studies",
@@ -31,11 +24,47 @@
       "author": "Stuart Hall",
       "description": "Cultural Studies and its Theoretical Legacies",
       "pdf": "pdfs/Stuart-Hall-Cultural-Studies-Theoretical-Legacies.pdf",
-      "categories": [
-        "Cultural Studies",
-        "Stuart Hall",
-        "Theory"
-      ]
+      "categories": ["Cultural Studies", "Stuart Hall", "Theory"]
+    },
+    {
+      "id": "19th-century-literature",
+      "title": "19th Century Literature",
+      "author": "FLSH Mohammedia S5",
+      "description": "19th Century Literature — Gothic elements, Victorian novels, and literary criticism",
+      "cover": "https://placehold.co/300x400/2a1a1a/ffffff?text=19th+C+Literature",
+      "pdf": "pdfs/19th-century-literature-notes.pdf",
+      "categories": ["19th Century Literature", "Gothic", "Victorian"],
+      "uploaded": "2026-10-05"
+    },
+    {
+      "id": "applied-linguistics",
+      "title": "Applied Linguistics",
+      "author": "FLSH Mohammedia S5",
+      "description": "Applied Linguistics — language teaching, discourse analysis, and TESOL methodology",
+      "cover": "https://placehold.co/300x400/1a2a3a/ffffff?text=Applied+Linguistics",
+      "pdf": "pdfs/applied-linguistics-notes.pdf",
+      "categories": ["Applied Linguistics", "TESOL", "Discourse"],
+      "uploaded": "2026-10-05"
+    },
+    {
+      "id": "advanced-research-techniques",
+      "title": "Advanced Research Techniques",
+      "author": "FLSH Mohammedia S5",
+      "description": "Research methodology, academic writing, MLA/APA citation, and thesis development",
+      "cover": "https://placehold.co/300x400/2e1a3a/ffffff?text=Adv+Research",
+      "pdf": "pdfs/advanced-research-techniques-notes.pdf",
+      "categories": ["Research", "Methodology", "Writing"],
+      "uploaded": "2026-10-05"
+    },
+    {
+      "id": "general-linguistics",
+      "title": "General Linguistics",
+      "author": "FLSH Mohammedia S5",
+      "description": "General Linguistics — phonetics, morphology, syntax, and semantic theory",
+      "cover": "https://placehold.co/300x400/1a3a2a/ffffff?text=General+Linguistics",
+      "pdf": "pdfs/general-linguistics-notes.pdf",
+      "categories": ["Linguistics", "Phonetics", "Syntax"],
+      "uploaded": "2026-10-05"
     }
   ]
 }
