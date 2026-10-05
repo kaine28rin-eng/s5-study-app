@@ -326,6 +326,12 @@
     function showFlipbookError(msg) {
       const canvas = document.getElementById('pageCanvas');
       const ctx = canvas.getContext('2d');
+      // Ensure canvas has visible dimensions even if renderPage hasn't set them
+      if (canvas.width === 0 || canvas.height === 0) {
+        const container = canvas.parentElement;
+        canvas.width = container.clientWidth || 500;
+        canvas.height = container.clientHeight || 700;
+      }
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       // Draw a visible error message directly on the canvas
       ctx.fillStyle = '#000';
@@ -432,6 +438,10 @@
 
     // ===== Page Rendering (uses the robust loadPdf defined above) =====
     function renderPage() {
+      if (!pdfDoc) {
+        showFlipbookError('Error: PDF document not loaded\n\nCall loadPdf() first.');
+        return;
+      }
       if (pageRendering) {
         pageNumPending = currentPage;
         return;
@@ -444,6 +454,8 @@
 
         pdfDoc.getPage(num).then(page => {
           const viewport = page.getViewport({ scale: scale });
+          // Explicitly set canvas dimensions — without this the canvas has 0x0
+          // and renders nothing (blank white screen).
           canvas.height = viewport.height;
           canvas.width = viewport.width;
           canvas.style.width = '100%';
@@ -463,7 +475,15 @@
               renderNextPage(pageNumPending);
               pageNumPending = null;
             }
+          }).catch(err => {
+            pageRendering = false;
+            console.error('PDF page render error:', err);
+            showFlipbookError(`Error rendering page ${num}\n\nDetails: ${err.message || err}`);
           });
+        }).catch(err => {
+          pageRendering = false;
+          console.error('getPage error:', err);
+          showFlipbookError(`Error loading page ${num}\n\nDetails: ${err.message || err}`);
         });
       };
 
