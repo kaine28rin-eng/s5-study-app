@@ -4,67 +4,64 @@
       "id": "cultural-studies",
       "title": "Cultural Studies",
       "author": "FLSH Mohammedia S5",
-      "description": "Core Cultural Studies module materials — Barker, Hall, and theoretical frameworks",
-      "cover": "https://placehold.co/300x400/1a1a2e/ffffff?text=Cultural+Studies",
-      "pdf": "pdfs/cultural-studies-sample.pdf",
-      "categories": ["Cultural Studies", "19th Century Lit"],
-      "pages": 0,
-      "uploaded": "2026-10-05"
+      "description": "Core introductory module for Cultural Studies at FLSHM Semester 5.",
+      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
+      "size": "930 KB",
+      "categories": ["Cultural Studies"]
     },
     {
       "id": "sage-cultural-studies",
       "title": "The SAGE Dictionary of Cultural Studies",
-      "author": "Chris Barker",
+      "author": "Barker, M. (SAGE Publications)",
+      "description": "The SAGE Dictionary of Cultural Studies — a comprehensive reference for key terms in cultural theory and media studies.",
       "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "categories": ["Cultural Studies", "Dictionary", "Reference"]
+      "size": "930 KB",
+      "categories": ["Cultural Studies"]
     },
     {
       "id": "stuart-hall-cultural-studies",
       "title": "Cultural Studies and its Theoretical Legacies",
-      "author": "Stuart Hall",
-      "description": "Cultural Studies and its Theoretical Legacies",
+      "author": "Stuart Hall (Polity Press)",
+      "description": "Stuart Hall's foundational text on Cultural Studies — theoretical frameworks, encoding/decoding, and identity.",
       "pdf": "pdfs/Stuart-Hall-Cultural-Studies-Theoretical-Legacies.pdf",
-      "categories": ["Cultural Studies", "Stuart Hall", "Theory"]
+      "size": "7.4 MB",
+      "categories": ["Cultural Studies"]
     },
     {
       "id": "19th-century-literature",
       "title": "19th Century Literature",
       "author": "FLSH Mohammedia S5",
-      "description": "19th Century Literature — Gothic elements, Victorian novels, and literary criticism",
-      "cover": "https://placehold.co/300x400/2a1a1a/ffffff?text=19th+C+Literature",
-      "pdf": "pdfs/19th-century-literature-notes.pdf",
-      "categories": ["19th Century Literature", "Gothic", "Victorian"],
-      "uploaded": "2026-10-05"
+      "description": "Study materials for the 19th Century Literature module — novel, poetry, and exam prep notes.",
+      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
+      "size": "TBD",
+      "categories": ["19th Century Literature"]
     },
     {
       "id": "applied-linguistics",
-      "title": "Applied Linguistics",
+      "title": "APPLIED LINGUISTICS",
       "author": "FLSH Mohammedia S5",
-      "description": "Applied Linguistics — language teaching, discourse analysis, and TESOL methodology",
-      "cover": "https://placehold.co/300x400/1a2a3a/ffffff?text=Applied+Linguistics",
-      "pdf": "pdfs/applied-linguistics-notes.pdf",
-      "categories": ["Applied Linguistics", "TESOL", "Discourse"],
-      "uploaded": "2026-10-05"
+      "description": "Materials for the Applied Linguistics module — TESOL, phonetics, discourse analysis.",
+      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
+      "size": "TBD",
+      "categories": ["APPLIED LINGUISTICS"]
     },
     {
       "id": "advanced-research-techniques",
-      "title": "Advanced Research Techniques",
+      "title": "ADVANCED RESEARCH TECHNIQUES",
       "author": "FLSH Mohammedia S5",
-      "description": "Research methodology, academic writing, MLA/APA citation, and thesis development",
-      "cover": "https://placehold.co/300x400/2e1a3a/ffffff?text=Adv+Research",
-      "pdf": "pdfs/advanced-research-techniques-notes.pdf",
-      "categories": ["Research", "Methodology", "Writing"],
-      "uploaded": "2026-10-05"
+      "description": "Materials for Advanced Research Techniques — MLA citation, thesis writing, methodology.",
+      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
+      "size": "TBD",
+      "categories": ["ADVANCED RESEARCH TECHNIQUES"]
     },
     {
       "id": "general-linguistics",
       "title": "General Linguistics",
       "author": "FLSH Mohammedia S5",
-      "description": "General Linguistics — phonetics, morphology, syntax, and semantic theory",
-      "cover": "https://placehold.co/300x400/1a3a2a/ffffff?text=General+Linguistics",
-      "pdf": "pdfs/general-linguistics-notes.pdf",
-      "categories": ["Linguistics", "Phonetics", "Syntax"],
-      "uploaded": "2026-10-05"
+      "description": "General Linguistics module — phonetics, morphology, syntax fundamentals.",
+      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
+      "size": "TBD",
+      "categories": ["General Linguistics"]
     }
   ]
 }
