@@ -1,67 +1,48 @@
 {
   "books": [
     {
-      "id": "cultural-studies",
-      "title": "Cultural Studies",
-      "author": "FLSH Mohammedia S5",
-      "description": "Core introductory module for Cultural Studies at FLSHM Semester 5.",
-      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "size": "930 KB",
-      "categories": ["Cultural Studies"]
-    },
-    {
-      "id": "sage-cultural-studies",
-      "title": "The SAGE Dictionary of Cultural Studies",
-      "author": "Barker, M. (SAGE Publications)",
-      "description": "The SAGE Dictionary of Cultural Studies — a comprehensive reference for key terms in cultural theory and media studies.",
-      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "size": "930 KB",
-      "categories": ["Cultural Studies"]
-    },
-    {
-      "id": "stuart-hall-cultural-studies",
-      "title": "Cultural Studies and its Theoretical Legacies",
-      "author": "Stuart Hall (Polity Press)",
-      "description": "Stuart Hall's foundational text on Cultural Studies — theoretical frameworks, encoding/decoding, and identity.",
-      "pdf": "pdfs/Stuart-Hall-Cultural-Studies-Theoretical-Legacies.pdf",
-      "size": "7.4 MB",
-      "categories": ["Cultural Studies"]
-    },
-    {
       "id": "19th-century-literature",
       "title": "19th Century Literature",
       "author": "FLSH Mohammedia S5",
       "description": "Study materials for the 19th Century Literature module — novel, poetry, and exam prep notes.",
-      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "size": "TBD",
-      "categories": ["19th Century Literature"]
+      "pdf": "pdfs/19th-century-literature-notes.pdf",
+      "size": "36 KB",
+      "categories": [
+        "19th Century Literature"
+      ]
     },
     {
       "id": "applied-linguistics",
       "title": "APPLIED LINGUISTICS",
       "author": "FLSH Mohammedia S5",
       "description": "Materials for the Applied Linguistics module — TESOL, phonetics, discourse analysis.",
-      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "size": "TBD",
-      "categories": ["APPLIED LINGUISTICS"]
+      "pdf": "pdfs/applied-linguistics-notes.pdf",
+      "size": "34 KB",
+      "categories": [
+        "APPLIED LINGUISTICS"
+      ]
     },
     {
       "id": "advanced-research-techniques",
       "title": "ADVANCED RESEARCH TECHNIQUES",
       "author": "FLSH Mohammedia S5",
       "description": "Materials for Advanced Research Techniques — MLA citation, thesis writing, methodology.",
-      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "size": "TBD",
-      "categories": ["ADVANCED RESEARCH TECHNIQUES"]
+      "pdf": "pdfs/advanced-research-techniques-notes.pdf",
+      "size": "38 KB",
+      "categories": [
+        "ADVANCED RESEARCH TECHNIQUES"
+      ]
     },
     {
       "id": "general-linguistics",
       "title": "General Linguistics",
       "author": "FLSH Mohammedia S5",
       "description": "General Linguistics module — phonetics, morphology, syntax fundamentals.",
-      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
-      "size": "TBD",
-      "categories": ["General Linguistics"]
+      "pdf": "pdfs/general-linguistics-notes.pdf",
+      "size": "36 KB",
+      "categories": [
+        "General Linguistics"
+      ]
     }
   ]
 }

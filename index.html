@@ -177,7 +177,10 @@
   <div id="flipbookView">
     <div class="flipbook-header">
       <span class="flipbook-title" id="flipbookTitle">Document</span>
-      <span class="flipbook-close" onclick="closeFlipbook()">✕</span>
+      <div>
+        <a id="downloadBtn" class="flipbook-close" style="display: inline-block; width: auto; padding: 4px 12px; margin-right: 8px; font-size: 13px;" href="#" download>Download</a>
+        <span class="flipbook-close" onclick="closeFlipbook()">✕</span>
+      </div>
     </div>
     <div class="page-container" id="pageContainer">
       <canvas class="page-canvas" id="pageCanvas"></canvas>
@@ -202,20 +205,7 @@
         icon: "📚",
         bookId: "19th-century-literature",
         files: [
-          { name: "19th Century Literature — Core Notes", pdf: "pdfs/19th-century-literature-notes.pdf", size: "2.1 MB", bookId: "19th-century-literature" },
-          { name: "Gothic Elements in Victorian Fiction", pdf: "pdfs/19th-century-literature-notes.pdf", size: "1.4 MB", bookId: "19th-century-literature" },
-          { name: "19th Century Literature — Past Exam Questions", pdf: "pdfs/19th-century-literature-notes.pdf", size: "480 KB", bookId: "19th-century-literature" }
-        ]
-      },
-      {
-        slug: "cultural_studies",
-        name: "Cultural Studies",
-        icon: "📖",
-        bookId: "cultural-studies",
-        files: [
-          { name: "The SAGE Dictionary of Cultural Studies", pdf: "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf", size: "930 KB", bookId: "sage-cultural-studies" },
-          { name: "Cultural Studies and its Theoretical Legacies", pdf: "pdfs/Stuart-Hall-Cultural-Studies-Theoretical-Legacies.pdf", size: "7.4 MB", bookId: "stuart-hall-cultural-studies" },
-          { name: "Cultural Studies — Core Module Guide", pdf: "pdfs/cultural-studies-sample.pdf", size: "1.2 MB", bookId: "cultural-studies" }
+          { name: "19th Century Literature — Core Notes", pdf: "pdfs/19th-century-literature-notes.pdf", size: "36 KB", bookId: "19th-century-literature" }
         ]
       },
       {
@@ -224,9 +214,7 @@
         icon: "🔤",
         bookId: "applied-linguistics",
         files: [
-          { name: "Applied Linguistics — Lecture Summaries", pdf: "pdfs/applied-linguistics-notes.pdf", size: "2.3 MB", bookId: "applied-linguistics" },
-          { name: "TESOL Methodology & Classroom Practice", pdf: "pdfs/applied-linguistics-notes.pdf", size: "1.8 MB", bookId: "applied-linguistics" },
-          { name: "Applied Linguistics — Midterm Questions", pdf: "pdfs/applied-linguistics-notes.pdf", size: "520 KB", bookId: "applied-linguistics" }
+          { name: "APPLIED LINGUISTICS — Core Notes", pdf: "pdfs/applied-linguistics-notes.pdf", size: "34 KB", bookId: "applied-linguistics" }
         ]
       },
       {
@@ -235,9 +223,7 @@
         icon: "🔍",
         bookId: "advanced-research-techniques",
         files: [
-          { name: "Research Methods Handbook", pdf: "pdfs/advanced-research-techniques-notes.pdf", size: "1.9 MB", bookId: "advanced-research-techniques" },
-          { name: "MLA 9th Edition — Complete Guide", pdf: "pdfs/advanced-research-techniques-notes.pdf", size: "1.1 MB", bookId: "advanced-research-techniques" },
-          { name: "Sample Thesis Proposal Framework", pdf: "pdfs/advanced-research-techniques-notes.pdf", size: "380 KB", bookId: "advanced-research-techniques" }
+          { name: "ADVANCED RESEARCH TECHNIQUES — Core Notes", pdf: "pdfs/advanced-research-techniques-notes.pdf", size: "38 KB", bookId: "advanced-research-techniques" }
         ]
       },
       {
@@ -246,16 +232,14 @@
         icon: "🎭",
         bookId: "general-linguistics",
         files: [
-          { name: "General Linguistics — Phonetics & Phonology", pdf: "pdfs/general-linguistics-notes.pdf", size: "1.7 MB", bookId: "general-linguistics" },
-          { name: "Morphology & Syntax — Lecture Notes", pdf: "pdfs/general-linguistics-notes.pdf", size: "1.3 MB", bookId: "general-linguistics" },
-          { name: "General Linguistics — Review Questions", pdf: "pdfs/general-linguistics-notes.pdf", size: "450 KB", bookId: "general-linguistics" }
+          { name: "General Linguistics — Core Notes", pdf: "pdfs/general-linguistics-notes.pdf", size: "36 KB", bookId: "general-linguistics" }
         ]
       }
     ];
 
     async function loadModules() {
       try {
-        const resp = await fetch('data/books.json');
+        const resp = await fetch('data/books.json?v=20250926');
         const data = await resp.json();
         const books = data.books || [];
         // Group books by their first category into module-level sections
@@ -267,8 +251,8 @@
           });
         });
         // Build module list from categories matching S5_MODULES order
-        const moduleOrder = ["19th Century Literature", "Cultural Studies", "APPLIED LINGUISTICS", "ADVANCED RESEARCH TECHNIQUES", "General Linguistics"];
-        const icons = { "19th Century Literature": "📚", "Cultural Studies": "📖", "APPLIED LINGUISTICS": "🔤", "ADVANCED RESEARCH TECHNIQUES": "🔍", "General Linguistics": "🎭" };
+        const moduleOrder = ["19th Century Literature", "APPLIED LINGUISTICS", "ADVANCED RESEARCH TECHNIQUES", "General Linguistics"];
+        const icons = { "19th Century Literature": "📚", "APPLIED LINGUISTICS": "🔤", "ADVANCED RESEARCH TECHNIQUES": "🔍", "General Linguistics": "🎭" };
         const built = [];
         moduleOrder.forEach(modName => {
           const icon = icons[modName] || "📄";
@@ -306,6 +290,10 @@
       fb.style.display = 'block';
       document.getElementById('flipbookTitle').innerText = title;
       document.getElementById('pageIndicator').innerText = 'Loading...';
+      // Set download link to the PDF path
+      const dlBtn = document.getElementById('downloadBtn');
+      dlBtn.href = pdfPath;
+      dlBtn.download = title + '.pdf';
       loadPdf(pdfPath);
     }
 
@@ -559,6 +547,10 @@
           const fb = document.getElementById('flipbookView');
           fb.style.display = 'block';
           document.getElementById('flipbookTitle').innerText = match.name;
+          // Set download link
+          const dlBtn = document.getElementById('downloadBtn');
+          dlBtn.href = match.pdf;
+          dlBtn.download = match.name + '.pdf';
           loadPdf(match.pdf);
           return;
         }
