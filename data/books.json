@@ -1,15 +1,29 @@
 {
-    "books": [
-        {
-            "id": "cultural-studies",
-            "title": "Cultural Studies",
-            "author": "FLSH Mohammedia S5",
-            "description": "19th Century Lit & Applied Linguistics materials",
-            "cover": "https://placehold.co/300x400/1a1a2e/ffffff?text=Cultural+Studies",
-            "pdf": "pdfs/cultural-studies-sample.pdf",
-            "categories": ["Cultural Studies", "19th Century Lit"],
-            "pages": 0,
-            "uploaded": "2026-10-05"
-        }
-    ]
+  "books": [
+    {
+      "id": "cultural-studies",
+      "title": "Cultural Studies",
+      "author": "FLSH Mohammedia S5",
+      "description": "19th Century Lit & Applied Linguistics materials",
+      "cover": "https://placehold.co/300x400/1a1a2e/ffffff?text=Cultural+Studies",
+      "pdf": "pdfs/cultural-studies-sample.pdf",
+      "categories": [
+        "Cultural Studies",
+        "19th Century Lit"
+      ],
+      "pages": 0,
+      "uploaded": "2026-10-05"
+    },
+    {
+      "id": "sage-cultural-studies",
+      "title": "The SAGE Dictionary of Cultural Studies",
+      "author": "Chris Barker",
+      "pdf": "pdfs/SAGE-Dictionary-Cultural-Studies-Barker.pdf",
+      "categories": [
+        "Cultural Studies",
+        "Dictionary",
+        "Reference"
+      ]
+    }
+  ]
 }
