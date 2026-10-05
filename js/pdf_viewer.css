@@ -1,0 +1,17 @@
+/* pdf.js viewer styles — minimal override for dark theme */
+.pdfViewer {
+    background: var(--bg-secondary);
+}
+.pdfViewer .page {
+    background: #fff;
+    margin: 0 auto 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+.pdfViewer .page canvas {
+    display: block;
+    margin: 0 auto;
+}
+.toolbar {
+    display: none;
+}

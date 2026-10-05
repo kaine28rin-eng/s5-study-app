@@ -1,0 +1,17 @@
+# S5 Study Vault — PDF-to-Flipbook Pipeline
+# Python venv for the flipbook bot
+
+[reqs]
+python = ">=3.11"
+packages = [
+    "pyrogram>=2.0",
+    "tgcrypto>=1.2",
+    "pymupdf>=1.24",
+    "pdf2image",       # For cover image conversion (optional)
+]
+
+[run]
+# Start the flipbook processor
+command = "python3 /root/study_bot/flipbook_bot.py"
+cwd = "/root/study_bot"
+auto_restart = true
